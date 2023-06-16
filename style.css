@@ -52,9 +52,33 @@ button {
 
 p {
     text-align: center;
-    color:red;
+    color:whitesmoke;
     font-weight: 400;
     padding: 1em 0;
     border-radius: 0.5em;
     transition: 0.5s;
+}
+
+p span {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.success {
+    background-color: rgb(16, 245, 16);
+    animation: pop 0.4s;
+}
+
+.error {
+    background-color: rgb(247, 26, 26);
+    animation: pop 0.4s;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1)
+    }
 }
